@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.11.0 on win32)" generated="2025-04-18T11:52:04.805041" rpa="false" schemaversion="5">
+<suite id="s1" name="Login" source="E:\robot_framework_101\login.robot">
+<test id="s1-t1" name="Successful Login Test" line="10">
+<kw name="Open SauceDemo Website">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-04-18T11:52:05.191640" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-04-18T11:52:05.191640" elapsed="2.883348"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-04-18T11:52:08.074988" elapsed="0.050324"/>
+</kw>
+<status status="PASS" start="2025-04-18T11:52:05.190595" elapsed="2.934717"/>
+</kw>
+<kw name="Enter Valid Credentials">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-04-18T11:52:08.127311" level="INFO">Typing text 'standard_user' into text field 'id:user-name'.</msg>
+<arg>id:user-name</arg>
+<arg>${USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-18T11:52:08.127311" elapsed="0.187056"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-04-18T11:52:08.316500" level="INFO">Typing text 'secret_sauce' into text field 'id:password'.</msg>
+<arg>id:password</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-18T11:52:08.315370" elapsed="0.146723"/>
+</kw>
+<status status="PASS" start="2025-04-18T11:52:08.126311" elapsed="0.335782"/>
+</kw>
+<kw name="Submit Login Form">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-04-18T11:52:08.463093" level="INFO">Clicking button 'id:login-button'.</msg>
+<arg>id:login-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-18T11:52:08.463093" elapsed="0.148331"/>
+</kw>
+<status status="PASS" start="2025-04-18T11:52:08.463093" elapsed="0.148331"/>
+</kw>
+<kw name="Verify Successful Login">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>xpath://span[text()="Products"]</arg>
+<arg>timeout=5s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-04-18T11:52:08.611424" elapsed="0.022139"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-04-18T11:52:08.655018" level="INFO">Current page contains text 'Products'.</msg>
+<arg>Products</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-04-18T11:52:08.633563" elapsed="0.022456"/>
+</kw>
+<status status="PASS" start="2025-04-18T11:52:08.611424" elapsed="0.044595"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-04-18T11:52:08.658015" elapsed="2.242350"/>
+</kw>
+<status status="PASS" start="2025-04-18T11:52:05.189785" elapsed="5.711620"/>
+</test>
+<status status="PASS" start="2025-04-18T11:52:04.807319" elapsed="6.095063"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Login" id="s1" pass="1" fail="0" skip="0">Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
