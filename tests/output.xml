@@ -1,53 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.11.0 on win32)" generated="2025-04-18T12:38:17.146162" rpa="false" schemaversion="5">
+<robot generator="Robot 7.2.2 (Python 3.11.0 on win32)" generated="2025-04-18T12:42:47.383590" rpa="false" schemaversion="5">
 <suite id="s1" name="testDemo1" source="E:\robot_framework_101\tests\testDemo1.robot">
 <test id="s1-t1" name="Validate Unsuccessful Login" line="9">
 <kw name="Open the browser with saucedemo">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-04-18T12:38:17.461602" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<msg time="2025-04-18T12:42:47.689444" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com/'.</msg>
 <arg>https://www.saucedemo.com/</arg>
 <arg>chrome</arg>
+<arg>options=add_experimental_option("detach",${True})</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-04-18T12:38:17.461602" elapsed="1.812476"/>
+<status status="PASS" start="2025-04-18T12:42:47.688441" elapsed="1.964498"/>
 </kw>
-<status status="PASS" start="2025-04-18T12:38:17.460591" elapsed="1.814488"/>
+<status status="PASS" start="2025-04-18T12:42:47.688441" elapsed="1.965497"/>
 </kw>
 <kw name="Fill the login Form">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-04-18T12:38:19.277080" level="INFO">Typing text 'standard_user' into text field 'user-name'.</msg>
+<msg time="2025-04-18T12:42:49.654939" level="INFO">Typing text 'standard_user' into text field 'user-name'.</msg>
 <arg>user-name</arg>
 <arg>standard_user</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-04-18T12:38:19.276082" elapsed="0.181720"/>
+<status status="PASS" start="2025-04-18T12:42:49.654939" elapsed="0.183311"/>
 </kw>
 <kw name="Input Password" owner="SeleniumLibrary">
-<msg time="2025-04-18T12:38:19.458802" level="INFO">Typing password into text field 'password'.</msg>
-<msg time="2025-04-18T12:38:19.508005" level="INFO">Temporally setting log level to: NONE</msg>
+<msg time="2025-04-18T12:42:49.840251" level="INFO">Typing password into text field 'password'.</msg>
+<msg time="2025-04-18T12:42:49.885775" level="INFO">Temporally setting log level to: NONE</msg>
 <arg>password</arg>
 <arg>secret_sauce123</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-04-18T12:38:19.458802" elapsed="0.123014"/>
+<status status="PASS" start="2025-04-18T12:42:49.839252" elapsed="0.116023"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-04-18T12:38:19.582827" level="INFO">Clicking button 'login-button'.</msg>
+<msg time="2025-04-18T12:42:49.956270" level="INFO">Clicking button 'login-button'.</msg>
 <arg>login-button</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-04-18T12:38:19.581816" elapsed="0.115489"/>
+<status status="PASS" start="2025-04-18T12:42:49.955275" elapsed="0.118908"/>
 </kw>
-<status status="PASS" start="2025-04-18T12:38:19.275079" elapsed="0.423237"/>
+<status status="PASS" start="2025-04-18T12:42:49.653938" elapsed="0.420245"/>
 </kw>
 <kw name="wait until it checks and display error message">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>xpath://*[@id="login_button_container"]/div/form/div[3]/h3</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-04-18T12:38:19.699624" elapsed="0.022527"/>
+<status status="PASS" start="2025-04-18T12:42:50.075192" elapsed="0.024281"/>
 </kw>
-<status status="PASS" start="2025-04-18T12:38:19.698316" elapsed="0.023835"/>
+<status status="PASS" start="2025-04-18T12:42:50.075192" elapsed="0.024281"/>
 </kw>
-<status status="PASS" start="2025-04-18T12:38:17.459581" elapsed="2.262570"/>
+<status status="PASS" start="2025-04-18T12:42:47.687348" elapsed="2.413135"/>
 </test>
 <doc>To Validate a login form</doc>
-<status status="PASS" start="2025-04-18T12:38:17.148161" elapsed="2.575989"/>
+<status status="PASS" start="2025-04-18T12:42:47.386531" elapsed="2.714951"/>
 </suite>
 <statistics>
 <total>

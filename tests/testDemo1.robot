@@ -14,7 +14,7 @@ Validate Unsuccessful Login
 
 *** Keywords ***
 Open the browser with saucedemo
-    Open Browser     https://www.saucedemo.com/    chrome 
+    Open Browser     https://www.saucedemo.com/    chrome    options=add_experimental_option("detach",${True})
 
 Fill the login Form
     Input Text        user-name    standard_user
